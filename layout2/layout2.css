@@ -8,7 +8,9 @@
     background-color: sandybrown;
     height: 100vh;
     width: 100%;
-    color:black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .contain h1{
@@ -67,22 +69,24 @@
         font-size: 40px;
     }
     .m h3{
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
 }
 
 @media screen and (max-width: 768px){
-    .m {
-        padding-bottom: 50px;
-    }
+
     .m h1{
         font-size: 30px;
     }
+    .contain {height: 1300px; width: 100%; }
+    .contain .m{flex-direction: column; align-items: center;}
 }
 
 @media screen and (max-width: 420px) {
     .contain{
         flex-direction: column;
+        height: 275vh;
+        width:100%;
     }
     .m{
         height: auto;
